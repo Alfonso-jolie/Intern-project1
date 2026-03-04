@@ -2,7 +2,7 @@ import { useState } from 'react'
 import './App.css'
 import aubLogo from './assets/AUBLOGO.png'
 
-type MainView = 'chat' | 'videos' | 'resources'
+type MainView = 'chat' | 'videos' | 'podcasts'
 
 const RESOURCES = [
   {
@@ -78,8 +78,14 @@ const getCategoryUrl = (categoryLabel: string): string | null => {
   return resource?.url || null
 }
 
+// Type definition for video items
+interface VideoItem {
+  title: string
+  url: string
+}
+
 // Video categories with detailed video items
-const VIDEO_CATEGORIES = {
+const VIDEO_CATEGORIES: Record<string, VideoItem[]> = {
   'AUB Products and Services': [
     {
       title: 'AUB Savings Explained',
@@ -302,11 +308,228 @@ const VIDEO_CATEGORIES = {
   ],
 }
 
+// Type definition for podcast items
+interface PodcastItem {
+  title: string
+  url: string
+}
+
+// Podcast categories with structured podcast items
+const PODCAST_CATEGORIES: Record<string, PodcastItem[]> = {
+  'Tellering, Cash Handling & Currency Knowledge': [
+    {
+      title: 'How to Spot Fake Philippine Peso Bills',
+      url: 'https://notebooklm.google.com/notebook/4f99c986-6a77-4a3c-87b7-828e057d11cd?artifactId=0e0320ef-d434-4436-a2c5-20d38f20563d',
+    },
+    {
+      title: 'Cash handling and Tellering',
+      url: 'https://notebooklm.google.com/notebook/4f99c986-6a77-4a3c-87b7-828e057d11cd?artifactId=902bd413-78f1-4603-b1d0-ca1b1e3fb59c',
+    },
+    {
+      title: 'International Banknote security',
+      url: 'https://notebooklm.google.com/notebook/4f99c986-6a77-4a3c-87b7-828e057d11cd?artifactId=aa9e0b1c-730b-449b-9ec7-6c3ff6b5f1d9',
+    },
+    {
+      title: 'Cash, Check and Tellering',
+      url: 'https://notebooklm.google.com/notebook/4f99c986-6a77-4a3c-87b7-828e057d11cd?artifactId=81f872bd-1ba6-4f4d-b998-57fb56a1b5a4',
+    },
+    {
+      title: 'Signature Analysis and Forgery Detection',
+      url: 'https://notebooklm.google.com/notebook/4f99c986-6a77-4a3c-87b7-828e057d11cd?artifactId=a7e0231e-69e0-43d1-aea9-35a131a3ffb5',
+    },
+    {
+      title: 'How to Determine if Your New Philippine Peso Bills are Fake or Genuine_',
+      url: 'https://notebooklm.google.com/notebook/4f99c986-6a77-4a3c-87b7-828e057d11cd?artifactId=2c59c49a-9a28-41f7-873f-564c066fe803',
+    },
+  ],
+  'AUB Products and Services': [
+    {
+      title: 'Auto Loan Requirements',
+      url: 'https://notebooklm.google.com/notebook/aaa2fa1d-3075-435d-ad5a-4d49fd9f9b6b?artifactId=840f8d6d-833e-4d79-b892-de037b76f5bf',
+    },
+    {
+      title: 'AUB Acceptable IDs and Salary Loan Checklist',
+      url: 'https://notebooklm.google.com/notebook/aaa2fa1d-3075-435d-ad5a-4d49fd9f9b6b?artifactId=63419448-325e-4517-b94b-fbfb16209818',
+    },
+    {
+      title: 'AUB Deposit Product',
+      url: 'https://notebooklm.google.com/notebook/aaa2fa1d-3075-435d-ad5a-4d49fd9f9b6b?artifactId=8cf40ef9-6c4e-4634-ae72-908f84d5827e',
+    },
+    {
+      title: 'AUB PayMate for Merchants and HelloMoney',
+      url: 'https://notebooklm.google.com/notebook/aaa2fa1d-3075-435d-ad5a-4d49fd9f9b6b?artifactId=eb58bb14-443f-4dd2-b2fc-7d1ed604c34a',
+    },
+    {
+      title: 'AUB UITF Management Starts at 10,000 Pesos.',
+      url: 'https://notebooklm.google.com/notebook/aaa2fa1d-3075-435d-ad5a-4d49fd9f9b6b?artifactId=5f5b3d7a-f648-441c-b665-607330968f5e',
+    },
+    {
+      title: 'AUB UITF T360 Workflow and Fund Details',
+      url: 'https://notebooklm.google.com/notebook/aaa2fa1d-3075-435d-ad5a-4d49fd9f9b6b?artifactId=6e73821d-f037-414a-86f8-f70024b10ac5',
+    },
+    {
+      title: 'UITFs Are Your Portfolio Autopilot',
+      url: 'https://notebooklm.google.com/notebook/aaa2fa1d-3075-435d-ad5a-4d49fd9f9b6b?artifactId=9aad497e-5d23-4c0f-99c4-cb32144155c6',
+    },
+    {
+      title: 'AUB UITF Trust Fees and Investment Options',
+      url: 'https://notebooklm.google.com/notebook/aaa2fa1d-3075-435d-ad5a-4d49fd9f9b6b?artifactId=2a6a2c78-7b7a-48ee-b4b5-dbb4d98f89e0',
+    },
+    {
+      title: 'Calculating AUB Preferred Savings Interest and Penalties',
+      url: 'https://notebooklm.google.com/notebook/aaa2fa1d-3075-435d-ad5a-4d49fd9f9b6b?artifactId=e784044b-a765-436a-946c-23caafac03b4',
+    },
+  ],
+  'Fees, Charges & Computation': [
+    {
+      title: 'Telegraphic Transfers',
+      url: 'https://notebooklm.google.com/notebook/feb58c73-882b-46a6-9c23-61885c93a013?artifactId=bafe0c00-ce42-454b-a024-ee8af06b6da0',
+    },
+    {
+      title: 'Interest Computation _ RCOCI Charges _ BP Charges',
+      url: 'https://notebooklm.google.com/notebook/feb58c73-882b-46a6-9c23-61885c93a013?artifactId=e2cde51a-8eaa-4dd0-a18a-9aa97b94222a',
+    },
+  ],
+  'Sales, Service & Branch Roles': [
+    {
+      title: 'Customer Service and Service Associate roles.',
+      url: 'https://notebooklm.google.com/notebook/5f9f0aec-3f28-49c1-b5e1-2d109faa451e?artifactId=004d97ac-5b99-4028-91f2-90cc02b4cb11',
+    },
+    {
+      title: 'Sales Associate and Service Associate',
+      url: 'https://notebooklm.google.com/notebook/5f9f0aec-3f28-49c1-b5e1-2d109faa451e?artifactId=c9811ae0-0d88-4553-9444-228dbc16eae8',
+    },
+    {
+      title: 'Customer Service',
+      url: 'https://notebooklm.google.com/notebook/5f9f0aec-3f28-49c1-b5e1-2d109faa451e?artifactId=dd68eaf1-eb8a-4dcc-8dd7-5b9381c0da58',
+    },
+    {
+      title: 'Duties and Responsibilities of a Sales Associate',
+      url: 'https://notebooklm.google.com/notebook/5f9f0aec-3f28-49c1-b5e1-2d109faa451e?artifactId=33bb3883-6126-4a2c-a523-9261caa9f9ba',
+    },
+    {
+      title: 'Service Associate Functions',
+      url: 'https://notebooklm.google.com/notebook/5f9f0aec-3f28-49c1-b5e1-2d109faa451e?artifactId=387f28d8-21db-466c-8c88-f21f3be0ec16',
+    },
+  ],
+  'HR, Workplace Policies & Systems': [
+    {
+      title: 'SMOKE-FREE WORKPLACE POLICY AND PROGRAM',
+      url: 'https://notebooklm.google.com/notebook/00caec8e-9337-402b-9f28-c63cbbe83fc4?artifactId=970a4e4e-0479-4a3c-9f36-9708c414ce02',
+    },
+    {
+      title: 'HIV/AIDS Workplace Policy and Program',
+      url: 'https://notebooklm.google.com/notebook/00caec8e-9337-402b-9f28-c63cbbe83fc4?artifactId=302722a1-ecf3-4daf-9f3a-a7e64e9c5c27',
+    },
+    {
+      title: 'Customer Service',
+      url: 'https://notebooklm.google.com/notebook/5f9f0aec-3f28-49c1-b5e1-2d109faa451e?artifactId=dd68eaf1-eb8a-4dcc-8dd7-5b9381c0da58',
+    },
+    {
+      title: 'Human Resources Integrated System (HRIS)',
+      url: 'https://notebooklm.google.com/notebook/00caec8e-9337-402b-9f28-c63cbbe83fc4?artifactId=66b09f22-d43c-4457-8a53-e47eac516ad1',
+    },
+  ],
+  'Cards and Payment Solutions': [
+    {
+      title: 'AUB REDI Money White-Label Payouts',
+      url: 'https://notebooklm.google.com/notebook/d5ba644a-995b-4d12-822e-db0f9008a9a2?artifactId=65e8b13f-ce12-41a5-81f3-cbc7705f5d38',
+    },
+    {
+      title: 'Revamping AUB\'s Cash Card Co-Branding Pitch',
+      url: 'https://notebooklm.google.com/notebook/d5ba644a-995b-4d12-822e-db0f9008a9a2?artifactId=697dc950-d1e3-401c-8ada-e745f0b99ca9',
+    },
+    {
+      title: 'Cash Card Co-Branding',
+      url: 'https://notebooklm.google.com/notebook/d5ba644a-995b-4d12-822e-db0f9008a9a2?artifactId=582063a0-e4ec-425e-8838-d9b7e7d3a9d0',
+    },
+    {
+      title: 'Cash Card co-branding and REDI MONEY Cash Card',
+      url: 'https://notebooklm.google.com/notebook/d5ba644a-995b-4d12-822e-db0f9008a9a2?artifactId=1cde7887-1f80-40d8-85af-f6956eae85eb',
+    },
+    {
+      title: 'Cash Card co-branding and REDI MONEY Cash Card',
+      url: 'https://notebooklm.google.com/notebook/d5ba644a-995b-4d12-822e-db0f9008a9a2?artifactId=fa0a9629-149f-40ea-9c23-27ed46223541',
+    },
+  ],
+  'All Documents': [],
+  'Account, Loans, and Credit Products': [
+    {
+      title: 'Housing Loans & Motor Vehicle Loans',
+      url: 'https://notebooklm.google.com/notebook/6f4894f1-961d-4e2e-a9c1-d148fe8b59b4?artifactId=49b5ab67-5b5f-4ea5-b751-5594f5d78f46',
+    },
+    {
+      title: 'Account Opening',
+      url: 'https://notebooklm.google.com/notebook/6f4894f1-961d-4e2e-a9c1-d148fe8b59b4?artifactId=c26290c7-3bf9-4f72-b5ae-4351289dc728',
+    },
+    {
+      title: 'AUB Secured Credit Card Deed of Assignment',
+      url: 'https://notebooklm.google.com/notebook/6f4894f1-961d-4e2e-a9c1-d148fe8b59b4?artifactId=8f32b3fc-4681-46b8-9b9a-fe4b37e2cd83',
+    },
+  ],
+  'Cash Management & Business Services': [
+      {
+      title: 'AUB’s Automated Invoicing and Government Payments',
+      url: 'https://notebooklm.google.com/notebook/0dfbd9f8-5706-425e-b6a0-d76bc39703b9?artifactId=501a139d-8aa6-4493-bf1c-43198fb55d4d',
+    },
+    {
+      title: 'AUB Bizkit Automates Cash Management',
+      url: 'https://notebooklm.google.com/notebook/0dfbd9f8-5706-425e-b6a0-d76bc39703b9?artifactId=51dd7ea8-0c4e-406d-8c0b-810399d024b7',
+    },
+    {
+      title: 'AUB Bizkit Automation and ADB Penalties',
+      url: 'https://notebooklm.google.com/notebook/0dfbd9f8-5706-425e-b6a0-d76bc39703b9?artifactId=2dfe5699-4cf2-420b-a37e-359c3f3938d2',
+    },
+  ],
+  'Branches Operation': [],
+  'Corporate Information & Product Overview': [],
+  'Business Product': [],
+  'Leadership, Productivity & Professional Skills': [
+    {
+      title: 'Write Business Letters With the POWER Method',
+      url: 'https://notebooklm.google.com/notebook/75f3f6b2-3b0d-45f9-86ac-b4d58240155a?artifactId=401b2eab-94cf-4057-8e25-7bd900e87609',
+    },
+    {
+      title: 'Master Your High-Stakes First Impression',
+      url: 'https://notebooklm.google.com/notebook/75f3f6b2-3b0d-45f9-86ac-b4d58240155a?artifactId=b85338ce-c807-4ea0-8468-5381875df39d',
+    },
+    {
+      title: 'Communication of leaders',
+      url: 'https://notebooklm.google.com/notebook/75f3f6b2-3b0d-45f9-86ac-b4d58240155a?artifactId=98aadbfc-119b-4340-93b3-70c202341bff',
+    },
+    {
+      title: 'Developing your people',
+      url: 'https://notebooklm.google.com/notebook/75f3f6b2-3b0d-45f9-86ac-b4d58240155a?artifactId=53d88986-20ce-4828-8f4b-2c2adabe1dff',
+    },
+    {
+      title: 'How to delegate properly',
+      url: 'https://notebooklm.google.com/notebook/75f3f6b2-3b0d-45f9-86ac-b4d58240155a?artifactId=c370281e-1f71-490f-b759-611413cd3ab2',
+    },
+      {
+      title: 'How to Reduce Stress at work',
+      url: 'https://notebooklm.google.com/notebook/75f3f6b2-3b0d-45f9-86ac-b4d58240155a?artifactId=0d9185cb-4bba-4e97-9b23-6564f65571fb',
+    },
+    {
+      title: 'How to keep your boss happy',
+      url: 'https://notebooklm.google.com/notebook/75f3f6b2-3b0d-45f9-86ac-b4d58240155a?artifactId=9ff59d17-47ab-4cbe-9273-af7828ad1cbc',
+    },
+    {
+      title: 'Improving your business writing',
+      url: 'https://notebooklm.google.com/notebook/75f3f6b2-3b0d-45f9-86ac-b4d58240155a?artifactId=3daa1240-9c4d-4edb-885c-0c9feb5e6d62',
+    },
+    {
+      title: 'Money saving tips',
+      url: 'https://notebooklm.google.com/notebook/75f3f6b2-3b0d-45f9-86ac-b4d58240155a?artifactId=eb266505-5842-414c-ba4a-141b309275e6',
+    },
+  ],
+}
+
 const CHAT_CATEGORIES = RESOURCES.map(r => r.label)
 
 function App() {
   const [activeView, setActiveView] = useState<MainView>('chat')
   const [selectedVideoCategory, setSelectedVideoCategory] = useState<string | null>(null)
+  const [selectedPodcastCategory, setSelectedPodcastCategory] = useState<string | null>(null)
 
   return (
     <div className="aub-app">
@@ -350,10 +573,10 @@ function App() {
             Videos
           </button>
           <button
-            className={`aub-sidebar-item ${activeView === 'resources' ? 'aub-sidebar-item-active' : ''}`}
-            onClick={() => setActiveView('resources')}
+            className={`aub-sidebar-item ${activeView === 'podcasts' ? 'aub-sidebar-item-active' : ''}`}
+            onClick={() => setActiveView('podcasts')}
           >
-            Resources
+            Podcasts
           </button>
         </aside>
 
@@ -489,6 +712,73 @@ function App() {
                 </div>
               )}
             </section>
+          ) : activeView === 'podcasts' ? (
+            <section className="aub-panel">
+              <header className="aub-panel-header">
+                <div>
+                  <h1 className="aub-panel-title">AUB Podcasts</h1>
+                  <p className="aub-panel-subtitle">
+                    Click on any podcast category to explore learning content and resources.
+                  </p>
+                </div>
+              </header>
+
+              <div className="aub-resources-grid">
+                {Object.keys(PODCAST_CATEGORIES).map((categoryName) => (
+                  <button
+                    key={categoryName}
+                    onClick={() => setSelectedPodcastCategory(categoryName)}
+                    className="aub-resource-card aub-podcast-category-btn"
+                    title={categoryName}
+                  >
+                    <div className="aub-resource-icon">🎙️</div>
+                    <div className="aub-resource-label">{categoryName}</div>
+                  </button>
+                ))}
+              </div>
+
+              {/* Modal for podcast category details */}
+              {selectedPodcastCategory && (
+                <div
+                  className="aub-modal-overlay"
+                  onClick={() => setSelectedPodcastCategory(null)}
+                >
+                  <div
+                    className="aub-modal-content"
+                    onClick={(e) => e.stopPropagation()}
+                  >
+                    <div className="aub-modal-header">
+                      <h2 className="aub-modal-title">{selectedPodcastCategory}</h2>
+                      <button
+                        className="aub-modal-close"
+                        onClick={() => setSelectedPodcastCategory(null)}
+                        aria-label="Close modal"
+                      >
+                        ✕
+                      </button>
+                    </div>
+
+                    <div className="aub-modal-body">
+                      <ul className="aub-video-list">
+                        {PODCAST_CATEGORIES[selectedPodcastCategory as keyof typeof PODCAST_CATEGORIES]?.map((podcast, index) => (
+                          <li key={index} className="aub-video-list-item">
+                            <a
+                              href={podcast.url}
+                              target="_blank"
+                              rel="noopener noreferrer"
+                              className="aub-video-link"
+                            >
+                              <span className="aub-video-link-text">{podcast.title}</span>
+                              <span className="aub-video-link-icon">→</span>
+                            </a>
+                          </li>
+                        ))}
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              )}
+            </section>
           ) : (
             <section className="aub-panel">
               <header className="aub-panel-header">
@@ -534,10 +824,10 @@ function App() {
             Videos
           </button>
           <button
-            className={`aub-sidebar-item ${activeView === 'resources' ? 'aub-sidebar-item-active' : ''}`}
-            onClick={() => setActiveView('resources')}
+            className={`aub-sidebar-item ${activeView === 'podcasts' ? 'aub-sidebar-item-active' : ''}`}
+            onClick={() => setActiveView('podcasts')}
           >
-            Resources
+            Podcasts
           </button>
         </aside>
       </div>
