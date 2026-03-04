@@ -252,6 +252,54 @@ const VIDEO_CATEGORIES = {
       url: 'https://notebooklm.google.com/notebook/d060e698-51f2-4b18-af5c-5f19530ec824?artifactId=d0a18cfd-feb3-4285-a9e6-2a5b069374f9',
     },
   ],
+  'Corporate Information & Product Overview': [
+    {
+      title: 'How to Open an AUB Account',
+      url: 'https://notebooklm.google.com/notebook/8b058e63-b24e-4a1b-9ad8-6750f46cf382?artifactId=1f8672bc-86a9-4df7-bdc8-b6dc6ce9a170',
+    },
+    {
+      title: 'AUB Corporate Background',
+      url: 'https://notebooklm.google.com/notebook/8b058e63-b24e-4a1b-9ad8-6750f46cf382?artifactId=86860caf-1efa-4b11-adba-7b76fc87aed3',
+    },
+    {
+      title: 'AUB: Banking Made Simple',
+      url: 'https://notebooklm.google.com/notebook/8b058e63-b24e-4a1b-9ad8-6750f46cf382?artifactId=45271985-e25f-4d63-b1c8-25ac87a4f829',
+    },
+    {
+      title: 'AUB Trust & Investment',
+      url: 'https://notebooklm.google.com/notebook/8b058e63-b24e-4a1b-9ad8-6750f46cf382?artifactId=43350705-fd83-4794-b314-5cd69056e4d8',
+    },
+  ],
+  'Leadership, Productivity & Professional Skills': [
+    {
+      title: 'Mastering Business Letters',
+      url: 'https://notebooklm.google.com/notebook/75f3f6b2-3b0d-45f9-86ac-b4d58240155a?artifactId=f3057dc7-0d1a-41f7-ab0c-c3366bedc3fb',
+    },
+    {
+      title: 'Communication Skills of Leaders',
+      url: 'https://notebooklm.google.com/notebook/75f3f6b2-3b0d-45f9-86ac-b4d58240155a?artifactId=9adfb8fc-dca9-4d4f-8bb5-772b42110e7d',
+    },
+    {
+      title: 'Developing Your People',
+      url: 'https://notebooklm.google.com/notebook/75f3f6b2-3b0d-45f9-86ac-b4d58240155a?artifactId=6c7aa024-4d63-4ef0-acc0-1be989b1c4df',
+    },
+    {
+      title: 'Building Your Reputation',
+      url: 'https://notebooklm.google.com/notebook/75f3f6b2-3b0d-45f9-86ac-b4d58240155a?artifactId=299d21ff-cafb-4662-878f-f19edeaf8679',
+    },
+    {
+      title: 'Goal Setting Tips',
+      url: 'https://notebooklm.google.com/notebook/75f3f6b2-3b0d-45f9-86ac-b4d58240155a?artifactId=996d24a7-2ae0-4d99-9795-3c9e0832d555',
+    },
+    {
+      title: 'How to Delegate Properly',
+      url: 'https://notebooklm.google.com/notebook/75f3f6b2-3b0d-45f9-86ac-b4d58240155a?artifactId=1c53bb8d-6c67-4a3f-835d-df07ff9cb7c1',
+    },
+    {
+      title: 'Money Saving Tips Made Simple',
+      url: 'https://notebooklm.google.com/notebook/75f3f6b2-3b0d-45f9-86ac-b4d58240155a?artifactId=c31cc5df-1067-4627-b82e-390024c1c475',
+    },
+  ],
 }
 
 const CHAT_CATEGORIES = RESOURCES.map(r => r.label)
