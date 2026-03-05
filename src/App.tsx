@@ -481,9 +481,112 @@ const PODCAST_CATEGORIES: Record<string, PodcastItem[]> = {
       url: 'https://notebooklm.google.com/notebook/0dfbd9f8-5706-425e-b6a0-d76bc39703b9?artifactId=2dfe5699-4cf2-420b-a37e-359c3f3938d2',
     },
   ],
-  'Branches Operation': [],
-  'Corporate Information & Product Overview': [],
-  'Business Product': [],
+  'Branches Operation': [  
+    {
+      title: 'Professional Communication',
+      url: 'https://notebooklm.google.com/notebook/d060e698-51f2-4b18-af5c-5f19530ec824?artifactId=d617f5da-8c44-4ad3-a520-1bc9d2590ea3',
+    },
+    {
+      title: 'Banknote security',
+      url: 'https://notebooklm.google.com/notebook/d060e698-51f2-4b18-af5c-5f19530ec824?artifactId=ca8e98cc-4498-4ada-94e0-7ab156260ae3',
+    },
+    {
+      title: 'Cash, Check and Tellering',
+      url: 'https://notebooklm.google.com/notebook/d060e698-51f2-4b18-af5c-5f19530ec824?artifactId=188b11d8-19d4-463d-9ff7-c44dd4135654',
+    },
+    {
+      title: 'Business Communication',
+      url: 'https://notebooklm.google.com/notebook/d060e698-51f2-4b18-af5c-5f19530ec824?artifactId=a8d19799-b938-41c8-8d5a-affd623cc502',
+    },
+    {
+      title: 'Customer services and Team development',
+      url: 'https://notebooklm.google.com/notebook/d060e698-51f2-4b18-af5c-5f19530ec824?artifactId=d19c3a15-11bf-478f-b77b-f7307fd70d61',
+    },
+      {
+      title: 'Sales associate',
+      url: 'https://notebooklm.google.com/notebook/d060e698-51f2-4b18-af5c-5f19530ec824?artifactId=8ee75921-806a-40b7-ab4f-475e6bf73979',
+    },
+    {
+      title: 'Workplace standard',
+      url: 'https://notebooklm.google.com/notebook/d060e698-51f2-4b18-af5c-5f19530ec824?artifactId=bd93d4db-a68b-4c9b-b914-849584c2156f',
+    },
+    {
+      title: 'Essential workplace skills and systems',
+      url: 'https://notebooklm.google.com/notebook/d060e698-51f2-4b18-af5c-5f19530ec824?artifactId=58e05a28-a06b-4c07-ad2f-7ea622df3ca3',
+    },
+    {
+      title: 'Workplace success',
+      url: 'https://notebooklm.google.com/notebook/d060e698-51f2-4b18-af5c-5f19530ec824?artifactId=1c77b683-4582-4b0a-b648-1b2e956978d6',
+    },
+  ],
+  'Corporate Information & Product Overview': [
+    {
+      title: 'AUB Corporate Overview and product essentials',
+      url: 'https://notebooklm.google.com/notebook/8b058e63-b24e-4a1b-9ad8-6750f46cf382?artifactId=a8166119-5b4c-40d2-b8d4-662d8d8c0104',
+    },
+    {
+      title: 'AUB Products',
+      url: 'https://notebooklm.google.com/notebook/8b058e63-b24e-4a1b-9ad8-6750f46cf382?artifactId=49a791eb-65c6-40ec-afa6-f1cdd7903edc',
+    },
+    {
+      title: 'AUBs Corporate background',
+      url: 'https://notebooklm.google.com/notebook/8b058e63-b24e-4a1b-9ad8-6750f46cf382?artifactId=49e7a05d-b207-4ee7-8373-cdbda0184ecc',
+    },
+    {
+      title: 'Trust Products',
+      url: 'https://notebooklm.google.com/notebook/8b058e63-b24e-4a1b-9ad8-6750f46cf382?artifactId=a3a111fa-d5a2-4f52-9d5d-2c5cf072a6d2',
+    },
+    {
+      title: 'AUBs RSA Security and Business Automation',
+      url: 'https://notebooklm.google.com/notebook/8b058e63-b24e-4a1b-9ad8-6750f46cf382?artifactId=02671057-3e95-4cad-911f-6e351f515c1c',
+    },
+  ],
+  'Business Product': [
+    {
+      title: 'Spotting Genuine Euro Yuan and Won',
+      url: 'https://notebooklm.google.com/notebook/2193fe57-88f7-4095-92a0-f1af27a81932?artifactId=3074a722-8b1a-4eba-93ff-176144820e22',
+    },
+    {
+      title: 'Business Letter',
+      url: 'https://notebooklm.google.com/notebook/2193fe57-88f7-4095-92a0-f1af27a81932?artifactId=9d03a355-b352-4cf7-8a12-10242cf3a573',
+    },
+    {
+      title: 'Communication skills of leader',
+      url: 'https://notebooklm.google.com/notebook/2193fe57-88f7-4095-92a0-f1af27a81932?artifactId=c7a1f576-3d33-43ce-b9d0-391c6eab20cb',
+    },
+    {
+      title: 'Customer Services',
+      url: 'https://notebooklm.google.com/notebook/2193fe57-88f7-4095-92a0-f1af27a81932?artifactId=15d1fb20-02b6-41cd-bbbb-3bbe6406b095',
+    },
+    {
+      title: 'Developing your people',
+      url: 'https://notebooklm.google.com/notebook/2193fe57-88f7-4095-92a0-f1af27a81932?artifactId=d5fe2d9c-0de1-4893-b09e-373e8a2eb309',
+    },
+      {
+      title: 'Duties and Responsibilities of the sales Associate',
+      url: 'https://notebooklm.google.com/notebook/2193fe57-88f7-4095-92a0-f1af27a81932?artifactId=5c2f7f63-209d-484e-9a38-88ca89078c7c',
+    },
+    {
+      title: 'Goal Settings',
+      url: 'https://notebooklm.google.com/notebook/2193fe57-88f7-4095-92a0-f1af27a81932?artifactId=a583d2b9-a80c-4313-937b-2fe6aa6e70c3',
+    },
+    {
+      title: 'HIV workplace and policy',
+      url: 'https://notebooklm.google.com/notebook/2193fe57-88f7-4095-92a0-f1af27a81932?artifactId=7e888a4b-6da7-44c7-b5b8-ac5e05a9538c',
+    },
+    {
+      title: 'Professional presence',
+      url: 'https://notebooklm.google.com/notebook/2193fe57-88f7-4095-92a0-f1af27a81932?artifactId=2bcf6da2-8cc7-4a21-b9e9-b2d2447f7527',
+    },
+    {
+      title: 'Global bank note design and security',
+      url: 'https://notebooklm.google.com/notebook/2193fe57-88f7-4095-92a0-f1af27a81932?artifactId=1a8c8d18-5c54-4319-a9db-5f9d7fa2c41d',
+    },
+    {
+      title: 'Cash, check and tillering',
+      url: 'https://notebooklm.google.com/notebook/2193fe57-88f7-4095-92a0-f1af27a81932?artifactId=f8bb0cc4-1368-49ba-b7f0-cf530816bd20',
+    },
+  ],
   'Leadership, Productivity & Professional Skills': [
     {
       title: 'Write Business Letters With the POWER Method',
