@@ -2,7 +2,7 @@ import { useState } from 'react'
 import './App.css'
 import aubLogo from './assets/AUBLOGO.png'
 
-type MainView = 'chat' | 'videos' | 'podcasts'
+type MainView = 'chat' | 'videos' | 'podcasts' | 'infographics'
 
 const RESOURCES = [
   {
@@ -627,12 +627,95 @@ const PODCAST_CATEGORIES: Record<string, PodcastItem[]> = {
   ],
 }
 
+// Type definition for infographic items
+interface InfographicItem {
+  title: string
+  url: string
+}
+
+// Infographics data
+const INFOGRAPHICS: Record<string, InfographicItem[]> = {
+  'Fees, Charges & Computation': [
+    {
+      title: 'AUB Branch Reference Guide',
+      url: 'https://notebooklm.google.com/notebook/feb58c73-882b-46a6-9c23-61885c93a013?artifactId=2e8e0c2c-a4d5-4844-a6a2-58368ecfcff0',
+    },
+    {
+      title: 'Employee Interest and Fees Guide',
+      url: 'https://notebooklm.google.com/notebook/feb58c73-882b-46a6-9c23-61885c93a013?artifactId=d5c57de9-491c-4b99-947a-c1cd138b8188',
+    },
+    {
+      title: 'Employee Guide to Telegraphic Transfers',
+      url: 'https://notebooklm.google.com/notebook/feb58c73-882b-46a6-9c23-61885c93a013?artifactId=3a03fe69-2ae6-46fb-ba90-f4953d060017',
+    },
+    {
+      title: 'Service Associate Operations Guide',
+      url: 'https://notebooklm.google.com/notebook/5f9f0aec-3f28-49c1-b5e1-2d109faa451e?artifactId=c6c6c340-eef4-4d5e-a1c7-790af58bae6a',
+    },
+  ],
+  'Cards and Payment Solutions': [
+    {
+      title: 'AUB RediMoney Co-Branded Cash Cards',
+      url: 'https://notebooklm.google.com/notebook/d5ba644a-995b-4d12-822e-db0f9008a9a2?artifactId=ff66ed61-d05c-47ce-86a7-29856f033545',
+    },
+    {
+      title: 'Workplace HIV Policy Infographic',
+      url: 'https://notebooklm.google.com/notebook/00caec8e-9337-402b-9f28-c63cbbe83fc4?artifactId=f8646838-b2d6-4f17-88b7-5bfa8f9a7310',
+    },
+    {
+      title: 'Integrated HR System Essential Guide',
+      url: 'https://notebooklm.google.com/notebook/00caec8e-9337-402b-9f28-c63cbbe83fc4?artifactId=8e251340-9273-45fb-8de1-2bf21db3e0f9',
+    },
+    {
+      title: 'Healthier Smoke-Free Workplace Policy',
+      url: 'https://notebooklm.google.com/notebook/00caec8e-9337-402b-9f28-c63cbbe83fc4?artifactId=b94ed4cc-15d0-42d1-a79b-fc3978c0a05d',
+    },
+  ],
+  'Sales, Service & Branch Roles': [
+    {
+      title: 'AUB Branch Excellence Roles Guide',
+      url: 'https://notebooklm.google.com/notebook/5f9f0aec-3f28-49c1-b5e1-2d109faa451e?artifactId=e48c7d2a-4e31-48da-ae91-2ae2cb8f34c9',
+    },
+    {
+      title: 'Professional Customer Service Guidelines',
+      url: 'https://notebooklm.google.com/notebook/5f9f0aec-3f28-49c1-b5e1-2d109faa451e?artifactId=f58ae9f6-e846-4e21-999b-76b6476b5ccd',
+    },
+    {
+      title: 'Sales Associate Service Guide',
+      url: 'https://notebooklm.google.com/notebook/5f9f0aec-3f28-49c1-b5e1-2d109faa451e?artifactId=72fbe115-ecc1-4259-aa90-ca9c86ab452c',
+    },
+    {
+      title: 'Service Associate Operations Guide',
+      url: 'https://notebooklm.google.com/notebook/5f9f0aec-3f28-49c1-b5e1-2d109faa451e?artifactId=c6c6c340-eef4-4d5e-a1c7-790af58bae6a',
+    },
+  ],
+  'HR, Workplace Policies & Systems': [
+    {
+      title: 'AUB Employee Policy Guide',
+      url: 'https://notebooklm.google.com/notebook/00caec8e-9337-402b-9f28-c63cbbe83fc4?artifactId=082d8f48-22ec-4081-8cff-db8a3b7ce5fa',
+    },
+    {
+      title: 'Workplace HIV Policy Infographic',
+      url: 'https://notebooklm.google.com/notebook/00caec8e-9337-402b-9f28-c63cbbe83fc4?artifactId=f8646838-b2d6-4f17-88b7-5bfa8f9a7310',
+    },
+    {
+      title: 'Integrated HR System Essential Guide',
+      url: 'https://notebooklm.google.com/notebook/00caec8e-9337-402b-9f28-c63cbbe83fc4?artifactId=8e251340-9273-45fb-8de1-2bf21db3e0f9',
+    },
+    {
+      title: 'Healthier Smoke-Free Workplace Policy',
+      url: 'https://notebooklm.google.com/notebook/00caec8e-9337-402b-9f28-c63cbbe83fc4?artifactId=b94ed4cc-15d0-42d1-a79b-fc3978c0a05d',
+    },
+  ],
+}
+
 const CHAT_CATEGORIES = RESOURCES.map(r => r.label)
 
 function App() {
   const [activeView, setActiveView] = useState<MainView>('chat')
   const [selectedVideoCategory, setSelectedVideoCategory] = useState<string | null>(null)
   const [selectedPodcastCategory, setSelectedPodcastCategory] = useState<string | null>(null)
+  const [selectedInfographicCategory, setSelectedInfographicCategory] = useState<string | null>(null)
 
   return (
     <div className="aub-app">
@@ -680,6 +763,12 @@ function App() {
             onClick={() => setActiveView('podcasts')}
           >
             Podcasts
+          </button>
+          <button
+            className={`aub-sidebar-item ${activeView === 'infographics' ? 'aub-sidebar-item-active' : ''}`}
+            onClick={() => setActiveView('infographics')}
+          >
+            Infographic
           </button>
         </aside>
 
@@ -882,6 +971,73 @@ function App() {
                 </div>
               )}
             </section>
+          ) : activeView === 'infographics' ? (
+            <section className="aub-panel">
+              <header className="aub-panel-header">
+                <div>
+                  <h1 className="aub-panel-title">Infographics</h1>
+                  <p className="aub-panel-subtitle">
+                    Click on any infographic category to explore visual guides and resources.
+                  </p>
+                </div>
+              </header>
+
+              <div className="aub-resources-grid">
+                {Object.keys(INFOGRAPHICS).map((categoryName) => (
+                  <button
+                    key={categoryName}
+                    onClick={() => setSelectedInfographicCategory(categoryName)}
+                    className="aub-resource-card aub-infographic-category-btn"
+                    title={categoryName}
+                  >
+                    <div className="aub-resource-icon">📊</div>
+                    <div className="aub-resource-label">{categoryName}</div>
+                  </button>
+                ))}
+              </div>
+
+              {/* Modal for infographic category details */}
+              {selectedInfographicCategory && (
+                <div
+                  className="aub-modal-overlay"
+                  onClick={() => setSelectedInfographicCategory(null)}
+                >
+                  <div
+                    className="aub-modal-content"
+                    onClick={(e) => e.stopPropagation()}
+                  >
+                    <div className="aub-modal-header">
+                      <h2 className="aub-modal-title">{selectedInfographicCategory}</h2>
+                      <button
+                        className="aub-modal-close"
+                        onClick={() => setSelectedInfographicCategory(null)}
+                        aria-label="Close modal"
+                      >
+                        ✕
+                      </button>
+                    </div>
+
+                    <div className="aub-modal-body">
+                      <ul className="aub-video-list">
+                        {INFOGRAPHICS[selectedInfographicCategory as keyof typeof INFOGRAPHICS]?.map((infographic, index) => (
+                          <li key={index} className="aub-video-list-item">
+                            <a
+                              href={infographic.url}
+                              target="_blank"
+                              rel="noopener noreferrer"
+                              className="aub-video-link"
+                            >
+                              <span className="aub-video-link-text">{infographic.title}</span>
+                              <span className="aub-video-link-icon">→</span>
+                            </a>
+                          </li>
+                        ))}
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              )}
+            </section>
           ) : (
             <section className="aub-panel">
               <header className="aub-panel-header">
@@ -912,27 +1068,7 @@ function App() {
           )}
         </main>
 
-        <aside className="aub-sidebar aub-sidebar-right">
-          <div className="aub-sidebar-section-title">Quick Actions</div>
-          <button
-            className={`aub-sidebar-item ${activeView === 'chat' ? 'aub-sidebar-item-active' : ''}`}
-            onClick={() => setActiveView('chat')}
-          >
-            Chat
-          </button>
-          <button
-            className={`aub-sidebar-item ${activeView === 'videos' ? 'aub-sidebar-item-active' : ''}`}
-            onClick={() => setActiveView('videos')}
-          >
-            Videos
-          </button>
-          <button
-            className={`aub-sidebar-item ${activeView === 'podcasts' ? 'aub-sidebar-item-active' : ''}`}
-            onClick={() => setActiveView('podcasts')}
-          >
-            Podcasts
-          </button>
-        </aside>
+
       </div>
     </div>
   )

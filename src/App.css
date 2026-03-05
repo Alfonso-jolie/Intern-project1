@@ -201,7 +201,7 @@
   margin: 1.75rem auto 2.5rem;
   padding: 0 1.5rem;
   display: grid;
-  grid-template-columns: 220px minmax(0, 1fr) 220px;
+  grid-template-columns: 220px minmax(0, 1fr);
   gap: 1.25rem;
   align-items: flex-start;
 }
