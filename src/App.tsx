@@ -671,6 +671,106 @@ const INFOGRAPHICS: Record<string, InfographicItem[]> = {
       url: 'https://notebooklm.google.com/notebook/00caec8e-9337-402b-9f28-c63cbbe83fc4?artifactId=b94ed4cc-15d0-42d1-a79b-fc3978c0a05d',
     },
   ],
+  'Tellering, Cash Handling & Currency Knowledge': [
+    {
+      title: 'Essential Teller Currency Fraud Guide',
+      url: 'https://notebooklm.google.com/notebook/4f99c986-6a77-4a3c-87b7-828e057d11cd?artifactId=1748119b-1e71-48d7-81f5-32f2c3ecd85a',
+    },
+    {
+      title: 'Global Currency Teller Handling Guide',
+      url: 'https://notebooklm.google.com/notebook/4f99c986-6a77-4a3c-87b7-828e057d11cd?artifactId=f3bddfb2-b189-4cfc-8421-649251c02891',
+    },
+    {
+      title: 'Essential Banking Operations Guide',
+      url: 'https://notebooklm.google.com/notebook/4f99c986-6a77-4a3c-87b7-828e057d11cd?artifactId=6652d2cc-25dc-4bcc-b37c-ccbb339077ab',
+    },
+    {
+      title: 'Philippine Peso Authenticity Guide',
+      url: 'https://notebooklm.google.com/notebook/4f99c986-6a77-4a3c-87b7-828e057d11cd?artifactId=4b335a67-e3ab-41be-997b-bc64f64d7b5c',
+    },
+    {
+      title: 'Signature Verification and Forgery Guide',
+      url: 'https://notebooklm.google.com/notebook/4f99c986-6a77-4a3c-87b7-828e057d11cd?artifactId=83ecf2e3-970a-4dde-9819-e28f25869747',
+    },
+  ],
+  'Account, Loans, and Credit Products': [
+    {
+      title: 'AUB Branch Essentials Quick Reference',
+      url: 'https://notebooklm.google.com/notebook/6f4894f1-961d-4e2e-a9c1-d148fe8b59b4?artifactId=57211b5d-2a58-4c70-bfc9-87bfc95c64fe',
+    },
+    {
+      title: 'Employee Deed of Assignment Guide',
+      url: 'https://notebooklm.google.com/notebook/6f4894f1-961d-4e2e-a9c1-d148fe8b59b4?artifactId=0b9c24fc-d81e-428b-aa68-a895f280a59c',
+    },
+    {
+      title: 'Bank Account Opening Compliance Essentials',
+      url: 'https://notebooklm.google.com/notebook/6f4894f1-961d-4e2e-a9c1-d148fe8b59b4?artifactId=d7794bd2-6b21-48dc-a414-d68f9af54cab',
+    },
+    {
+      title: 'Employee Loan Policy Essentials Overview',
+      url: 'https://notebooklm.google.com/notebook/6f4894f1-961d-4e2e-a9c1-d148fe8b59b4?artifactId=01a9c194-1634-4c4f-9462-32f1e7a39102',
+    },
+  ],
+  'Business Product': [
+    {
+      title: 'Fraud vs. Fast Balancing Act',
+      url: 'https://notebooklm.google.com/notebook/2193fe57-88f7-4095-92a0-f1af27a81932?artifactId=f7a88b98-74b4-4b80-b63d-446a47352ffb',
+    },
+    {
+      title: 'Branch Excellence Operations Reference Guide',
+      url: 'https://notebooklm.google.com/notebook/2193fe57-88f7-4095-92a0-f1af27a81932?artifactId=1f0fa2dc-3399-4b64-9413-f1c5d7ddcc25',
+    },
+    {
+      title: 'Global Banknote Security Handling Guide',
+      url: 'https://notebooklm.google.com/notebook/2193fe57-88f7-4095-92a0-f1af27a81932?artifactId=b629b879-55bc-4cf2-9ea8-7608b6f0065f',
+    },
+    {
+      title: 'Professional Business Correspondence Guide',
+      url: 'https://notebooklm.google.com/notebook/2193fe57-88f7-4095-92a0-f1af27a81932?artifactId=dc364e63-277b-4653-ab6c-95078c400f59',
+    },
+    {
+      title: 'Professional Bank Tellering Guide',
+      url: 'https://notebooklm.google.com/notebook/2193fe57-88f7-4095-92a0-f1af27a81932?artifactId=dc364e63-277b-4653-ab6c-95078c400f59',
+    },
+    {
+      title: 'Mastering Leadership Communication Skills',
+      url: 'https://notebooklm.google.com/notebook/2193fe57-88f7-4095-92a0-f1af27a81932?artifactId=1e83c7ec-961d-467b-8251-f60501c6e009',
+    },
+    {
+      title: 'Guide for Customer Service Excellence',
+      url: 'https://notebooklm.google.com/notebook/2193fe57-88f7-4095-92a0-f1af27a81932?artifactId=35723855-c461-4051-a56b-f9768da1020d',
+    },
+    {
+      title: 'Developing Your People Roadmap',
+      url: 'https://notebooklm.google.com/notebook/2193fe57-88f7-4095-92a0-f1af27a81932?artifactId=28c91386-41ae-48d0-9731-b94111dbb7d7',
+    },
+    {
+      title: 'Bank Sales Associate Excellence Guide',
+      url: 'https://notebooklm.google.com/notebook/2193fe57-88f7-4095-92a0-f1af27a81932?artifactId=ebc218c9-72e8-4a25-b450-c4c4ffea66c2',
+    },
+    {
+      title: 'Essential Goal Setting Guide',
+      url: 'https://notebooklm.google.com/notebook/2193fe57-88f7-4095-92a0-f1af27a81932?artifactId=40548527-d736-481b-b000-573fdcd26544',
+    },
+    {
+      title: 'HIV/AIDS Workplace Policy Overview',
+      url: 'https://notebooklm.google.com/notebook/2193fe57-88f7-4095-92a0-f1af27a81932?artifactId=9590a940-49cf-40df-8111-f1ce29d11595',
+    },
+  ],
+  'Branches Operation': [
+    {
+      title: "The Banker's Excellence Roadmap",
+      url: 'https://notebooklm.google.com/notebook/d060e698-51f2-4b18-af5c-5f19530ec824?artifactId=fb3154d7-24ec-4842-9073-e12710ff5b2f',
+    },
+    {
+      title: 'Guide to Professional Excellence',
+      url: 'https://notebooklm.google.com/notebook/d060e698-51f2-4b18-af5c-5f19530ec824?artifactId=e493b7ae-46e6-4fa9-9f45-f14ab9d78255',
+    },
+    {
+      title: 'Tips for Positive Boss Relationships',
+      url: 'https://notebooklm.google.com/notebook/d060e698-51f2-4b18-af5c-5f19530ec824?artifactId=179f608a-54a5-45fa-ac70-43f7d17817f5',
+    },
+  ],
   'Sales, Service & Branch Roles': [
     {
       title: 'AUB Branch Excellence Roles Guide',
