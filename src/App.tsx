@@ -770,6 +770,34 @@ const INFOGRAPHICS: Record<string, InfographicItem[]> = {
       title: 'Tips for Positive Boss Relationships',
       url: 'https://notebooklm.google.com/notebook/d060e698-51f2-4b18-af5c-5f19530ec824?artifactId=179f608a-54a5-45fa-ac70-43f7d17817f5',
     },
+    {
+      title: 'Mastering the Art of Delegation',
+      url: 'https://notebooklm.google.com/notebook/d060e698-51f2-4b18-af5c-5f19530ec824?artifactId=66df7569-e4ea-43b3-88b6-41e0677e8303',
+    },
+    {
+      title: 'Guide to Workplace Excellence',
+      url: 'https://notebooklm.google.com/notebook/d060e698-51f2-4b18-af5c-5f19530ec824?artifactId=53bf66d1-d20d-424a-bc3c-26fb502209d8',
+    },
+    {
+      title: 'Workplace Wellness Stress Management Guide',
+      url: 'https://notebooklm.google.com/notebook/d060e698-51f2-4b18-af5c-5f19530ec824?artifactId=e1d328e6-81b5-45cd-9a54-87fe0a30c2c2',
+    },
+    {
+      title: 'Philippine Peso Authentication Handling Guide',
+      url: 'https://notebooklm.google.com/notebook/d060e698-51f2-4b18-af5c-5f19530ec824?artifactId=99739302-4599-41a8-b2b5-c06c37410f01',
+    },
+    {
+      title: 'Digital Workplace Portal Overview',
+      url: 'https://notebooklm.google.com/notebook/d060e698-51f2-4b18-af5c-5f19530ec824?artifactId=a6c426d8-354f-4039-bf74-e36e5724c5a6',
+    },
+    {
+      title: 'Mastering Business Writing Guide',
+      url: 'https://notebooklm.google.com/notebook/d060e698-51f2-4b18-af5c-5f19530ec824?artifactId=dcabfeb5-db05-49df-80d6-ec9608eddf23',
+    },
+    {
+      title: 'Financial Responsibility Infographic',
+      url: 'https://notebooklm.google.com/notebook/d060e698-51f2-4b18-af5c-5f19530ec824?artifactId=b300f157-3701-4782-8118-466907abf092',
+    },
   ],
   'Sales, Service & Branch Roles': [
     {
