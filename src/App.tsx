@@ -799,6 +799,66 @@ const INFOGRAPHICS: Record<string, InfographicItem[]> = {
       url: 'https://notebooklm.google.com/notebook/d060e698-51f2-4b18-af5c-5f19530ec824?artifactId=b300f157-3701-4782-8118-466907abf092',
     },
   ],
+  'Cash Management & Business Services': [
+    {
+      title: 'Integrated Business Cash Management Solution',
+      url: 'https://notebooklm.google.com/notebook/0dfbd9f8-5706-425e-b6a0-d76bc39703b9?artifactId=1e6a7173-0a51-42a7-b937-c019abdce5f2',
+    },
+    {
+      title: 'Employee Cash Management Essentials',
+      url: 'https://notebooklm.google.com/notebook/0dfbd9f8-5706-425e-b6a0-d76bc39703b9?artifactId=a840a903-a8c7-45f5-a2cf-0c76abfc6dec',
+    },
+    {
+      title: 'Business Cash Management Account Guide',
+      url: 'https://notebooklm.google.com/notebook/0dfbd9f8-5706-425e-b6a0-d76bc39703b9?artifactId=77f49727-8677-45fa-8e21-a2ce0952480d',
+    },
+    {
+      title: 'Corporate Guide for eGov Application',
+      url: 'https://notebooklm.google.com/notebook/0dfbd9f8-5706-425e-b6a0-d76bc39703b9?artifactId=ba3fbe64-1096-435e-b7c6-162896d5401f',
+    },
+    {
+      title: 'Digital Invoice Payment Solution',
+      url: 'https://notebooklm.google.com/notebook/0dfbd9f8-5706-425e-b6a0-d76bc39703b9?artifactId=0a52a017-3370-4b4c-b203-61200790aedf',
+    },
+  ],
+  'Leadership, Productivity & Professional Skills': [
+    {
+      title: 'Mastering the Language of Leadership',
+      url: 'https://notebooklm.google.com/notebook/75f3f6b2-3b0d-45f9-86ac-b4d58240155a?artifactId=756c66b8-9925-4eb5-8b6f-4d2b4e8db13d',
+    },
+    {
+      title: "Leader's Guide to Growth",
+      url: 'https://notebooklm.google.com/notebook/75f3f6b2-3b0d-45f9-86ac-b4d58240155a?artifactId=92e40f66-b8c5-44b8-a7e2-fcc67872c499',
+    },
+    {
+      title: 'Goal Setting Strategy Guide',
+      url: 'https://notebooklm.google.com/notebook/75f3f6b2-3b0d-45f9-86ac-b4d58240155a?artifactId=649a0bbb-7345-413a-941d-a8a4eeabf7b7',
+    },
+    {
+      title: 'Professional First Impressions Blueprint',
+      url: 'https://notebooklm.google.com/notebook/75f3f6b2-3b0d-45f9-86ac-b4d58240155a?artifactId=f68fac05-10a0-4a6b-88cc-7e235d1fce22',
+    },
+    {
+      title: 'Mastering the Art of Delegation',
+      url: 'https://notebooklm.google.com/notebook/75f3f6b2-3b0d-45f9-86ac-b4d58240155a?artifactId=d063f110-55bc-49d5-a2ff-acefd82d2c03',
+    },
+    {
+      title: 'Mastering Upward Management Guide',
+      url: 'https://notebooklm.google.com/notebook/75f3f6b2-3b0d-45f9-86ac-b4d58240155a?artifactId=327b3b20-21ae-422b-b061-59975ed03dfd',
+    },
+    {
+      title: 'Reducing Workplace Stress Guide',
+      url: 'https://notebooklm.google.com/notebook/75f3f6b2-3b0d-45f9-86ac-b4d58240155a?artifactId=8a6e85c3-4965-42b1-a910-b19635404b7d',
+    },
+    {
+      title: 'Professional Business Writing Guide',
+      url: 'https://notebooklm.google.com/notebook/75f3f6b2-3b0d-45f9-86ac-b4d58240155a?artifactId=60431e1a-dcef-4559-8ff8-b99c906580ed',
+    },
+    {
+      title: 'Financial Wellness: Smart Habits Guide',
+      url: 'https://notebooklm.google.com/notebook/75f3f6b2-3b0d-45f9-86ac-b4d58240155a?artifactId=049ca50f-5028-44a6-a711-ae65be2e7252',
+    },
+  ],
   'Sales, Service & Branch Roles': [
     {
       title: 'AUB Branch Excellence Roles Guide',
