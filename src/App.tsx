@@ -98,6 +98,24 @@ const VIDEO_CATEGORIES: Record<string, VideoItem[]> = {
       url: 'https://notebooklm.google.com/notebook/4f99c986-6a77-4a3c-87b7-828e057d11cd?artifactId=f80ffb6f-1ded-4469-864d-ea987ca66c1a',
     },
   ],
+  'All Documents': [
+    {
+      title: 'AUB Bizkit: Business Center',
+      url: 'https://notebooklm.google.com/notebook/afe539aa-c413-486d-96be-5096c3a4e8ba?artifactId=7ab88d55-4fe0-47dc-a546-0296485f9ae5',
+    },
+    {
+      title: 'Demystifying Trust Products',
+      url: 'https://notebooklm.google.com/notebook/afe539aa-c413-486d-96be-5096c3a4e8ba?artifactId=9b82a79b-0313-4bbc-8b07-3bfed6ab18a8',
+    },
+    {
+      title: 'AUB: Preventing Financial Crime',
+      url: 'https://notebooklm.google.com/notebook/afe539aa-c413-486d-96be-5096c3a4e8ba?artifactId=cb404659-9419-4cf7-8c9e-8dc2e326aaa5',
+    },
+    {
+      title: 'AUB\'s BCP Guide',
+      url: 'https://notebooklm.google.com/notebook/afe539aa-c413-486d-96be-5096c3a4e8ba?artifactId=bf883c76-87cb-4ddb-bb1a-db46efe85d1b',
+    },
+  ],
   'AUB Products and Services': [
     {
       title: 'AUB Savings Explained',
@@ -318,6 +336,53 @@ const VIDEO_CATEGORIES: Record<string, VideoItem[]> = {
       url: 'https://notebooklm.google.com/notebook/75f3f6b2-3b0d-45f9-86ac-b4d58240155a?artifactId=c31cc5df-1067-4627-b82e-390024c1c475',
     },
   ],
+  'Business Product': [
+{
+      title: 'Banknote Information',
+      url: 'https://notebooklm.google.com/notebook/2193fe57-88f7-4095-92a0-f1af27a81932?artifactId=c8d1cc6f-63f2-4148-b9b3-c6bef5a00044',
+    },
+    {
+      title: 'The Core of the Counter',
+      url: 'https://notebooklm.google.com/notebook/2193fe57-88f7-4095-92a0-f1af27a81932?artifactId=e6569bcf-2171-4227-a7fb-1497a38f2131',
+    },
+    {
+      title: 'Anatomy of a Business Letter',
+      url: 'https://notebooklm.google.com/notebook/2193fe57-88f7-4095-92a0-f1af27a81932?artifactId=e72d0756-0e6b-4289-bfc0-0c2d76e8f922',
+    },
+    {
+      title: 'Communication Skills of Leaders',
+      url: 'https://notebooklm.google.com/notebook/2193fe57-88f7-4095-92a0-f1af27a81932?artifactId=f05eda2d-396b-4c7e-b109-8cbc1a6256f4',
+    },
+    {
+      title: 'The AUB Service Journey',
+      url: 'https://notebooklm.google.com/notebook/2193fe57-88f7-4095-92a0-f1af27a81932?artifactId=8bf3dfe3-4db7-4e5f-a115-54421208d847',
+    },
+    {
+      title: 'Developing People & Goals',
+      url: 'https://notebooklm.google.com/notebook/2193fe57-88f7-4095-92a0-f1af27a81932?artifactId=f7f3a8e5-dac1-47d4-bbaa-45a826257c5f',
+    },
+    {
+      title: 'Bank Sales Associate Guide',
+      url: 'https://notebooklm.google.com/notebook/2193fe57-88f7-4095-92a0-f1af27a81932?artifactId=276a0e72-3c50-46d7-8b2c-538796ed77d4',
+    },
+    {
+      title: 'HIV/AIDS Workplace Policy',
+      url: 'https://notebooklm.google.com/notebook/2193fe57-88f7-4095-92a0-f1af27a81932?artifactId=74bd2f73-1193-46ac-81e4-6e73da125a10',
+    },
+    {
+      title: 'How To Delegate Properly',
+      url: 'https://notebooklm.google.com/notebook/2193fe57-88f7-4095-92a0-f1af27a81932?artifactId=1c73c4e3-1b3f-46c1-b34d-d93345c3e995',
+    },
+    {
+      title: 'Positive First Impressions',
+      url: 'https://notebooklm.google.com/notebook/2193fe57-88f7-4095-92a0-f1af27a81932?artifactId=b291b11a-f152-48b6-b08f-0eb8cba38a1c',
+    },
+    {
+      title: 'Goal Setting for Success',
+      url: 'https://notebooklm.google.com/notebook/2193fe57-88f7-4095-92a0-f1af27a81932?artifactId=55428e6d-9ca4-4ed1-a8a6-30a608e58510',
+    },
+
+]
 }
 
 // Type definition for podcast items
@@ -355,6 +420,10 @@ const PODCAST_CATEGORIES: Record<string, PodcastItem[]> = {
     },
   ],
   'AUB Products and Services': [
+    {
+      title: 'The Logic of Bank Loan Requirements',
+      url: 'https://notebooklm.google.com/notebook/aaa2fa1d-3075-435d-ad5a-4d49fd9f9b6b?artifactId=e6b25087-d5af-4971-b980-bb38b646dfe2',
+    },
     {
       title: 'Auto Loan Requirements',
       url: 'https://notebooklm.google.com/notebook/aaa2fa1d-3075-435d-ad5a-4d49fd9f9b6b?artifactId=840f8d6d-833e-4d79-b892-de037b76f5bf',
@@ -464,7 +533,29 @@ const PODCAST_CATEGORIES: Record<string, PodcastItem[]> = {
       url: 'https://notebooklm.google.com/notebook/d5ba644a-995b-4d12-822e-db0f9008a9a2?artifactId=fa0a9629-149f-40ea-9c23-27ed46223541',
     },
   ],
-  'All Documents': [],
+  'All Documents': [
+    {
+      title: 'AUB BizKit Automates Business Operations',
+      url: 'https://notebooklm.google.com/notebook/afe539aa-c413-486d-96be-5096c3a4e8ba?artifactId=1b8947e0-d7d7-47a1-90a5-859cd9ffca82',
+    },
+    {
+      title: 'Why Businesses Use Uninsured Corporate Trusts',
+      url: 'https://notebooklm.google.com/notebook/afe539aa-c413-486d-96be-5096c3a4e8ba?artifactId=aa57295c-37a2-467a-8b47-d8817d8c970c',
+    },
+    {
+      title: 'Stopping Money Laundering at AUB Branches',
+      url: 'https://notebooklm.google.com/notebook/afe539aa-c413-486d-96be-5096c3a4e8ba?artifactId=08bd010e-d029-49e9-a2fe-38f6e89ae412',
+    },
+    {
+      title: 'AUBs Business Continuity Management Program',
+      url: 'https://notebooklm.google.com/notebook/afe539aa-c413-486d-96be-5096c3a4e8ba?artifactId=412a0bdb-9687-49ea-b0ab-7ec78830edbd',
+    },
+    {
+      title: 'The Logic Behind Bank Loan Requirements',
+      url: 'https://notebooklm.google.com/notebook/d5ba644a-995b-4d12-822e-db0f9008a9a2?artifactId=fa0a9629-149f-40ea-9c23-27ed46223541',
+    },
+
+  ],
   'Account, Loans, and Credit Products': [
     {
       title: 'Housing Loans & Motor Vehicle Loans',
@@ -939,6 +1030,24 @@ const INFOGRAPHICS: Record<string, InfographicItem[]> = {
     {
       title: 'Employee Benefits Value Proposition',
       url: 'https://notebooklm.google.com/notebook/8b058e63-b24e-4a1b-9ad8-6750f46cf382?artifactId=8b6f9e45-c417-480c-9161-ff6d2ffb3641',
+    },
+  ],
+  'All Documents': [
+    {
+      title: 'Integrated Business Cash Management Overview',
+      url: 'https://notebooklm.google.com/notebook/afe539aa-c413-486d-96be-5096c3a4e8ba?artifactId=5ff460f2-16b1-4499-9d59-c767537da892',
+    },
+    {
+      title: 'Trust and Wealth Management Guide',
+      url: 'https://notebooklm.google.com/notebook/afe539aa-c413-486d-96be-5096c3a4e8ba?artifactId=27172e3c-ef6b-48bf-88d1-6783211eb607',
+    },
+    {
+      title: 'AMLA Compliance Program Overview',
+      url: 'https://notebooklm.google.com/notebook/afe539aa-c413-486d-96be-5096c3a4e8ba?artifactId=2798982a-74c8-4dbf-950d-a6a41efb006b',
+    },
+    {
+      title: 'Business Continuity Guide to Resilience',
+      url: 'https://notebooklm.google.com/notebook/afe539aa-c413-486d-96be-5096c3a4e8ba?artifactId=35187a9a-2d11-402c-9846-07cd458d11de',
     },
   ],
 }
