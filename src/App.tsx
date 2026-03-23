@@ -460,6 +460,11 @@ const PODCAST_CATEGORIES: Record<string, PodcastItem[]> = {
       title: 'Calculating AUB Preferred Savings Interest and Penalties',
       url: 'https://notebooklm.google.com/notebook/aaa2fa1d-3075-435d-ad5a-4d49fd9f9b6b?artifactId=e784044b-a765-436a-946c-23caafac03b4',
     },
+        {
+      title: 'Inside AUB internal loan training documents',
+      url: 'https://notebooklm.google.com/notebook/aaa2fa1d-3075-435d-ad5a-4d49fd9f9b6b?artifactId=262d256f-ebe0-48c9-8983-fe853ad99802',
+    },
+
   ],
   'Fees, Charges & Computation': [
     {
@@ -553,6 +558,10 @@ const PODCAST_CATEGORIES: Record<string, PodcastItem[]> = {
     {
       title: 'The Logic Behind Bank Loan Requirements',
       url: 'https://notebooklm.google.com/notebook/d5ba644a-995b-4d12-822e-db0f9008a9a2?artifactId=fa0a9629-149f-40ea-9c23-27ed46223541',
+    },
+    {
+      title: 'How your subconscious mind builds wealth',
+      url: 'https://notebooklm.google.com/notebook/afe539aa-c413-486d-96be-5096c3a4e8ba?artifactId=683f0028-4ea0-4e80-aea4-9e33d694a35a',
     },
 
   ],
