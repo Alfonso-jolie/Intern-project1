@@ -1173,9 +1173,9 @@ function App() {
           <section className="aub-panel">
             <header className="aub-panel-header">
               <div>
-                <h1 className="aub-panel-title">RediMoney to go digital</h1>
+                <h1 className="aub-panel-title">Training Module</h1>
                 <p className="aub-panel-subtitle">
-                  Engage with AUB resources, documents, and knowledge through chat categories.
+                  Access AUB resources and knowledge through chat-based categories.
                 </p>
               </div>
               <button className="aub-panel-cta">Learn more</button>
