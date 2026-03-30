@@ -1182,32 +1182,6 @@ function App() {
             </header>
 
             <div className="aub-panel-body">
-              <div className="aub-chat">
-                <div className="aub-chat-messages">
-                  <div className="aub-chat-message aub-chat-message-incoming">
-                    <div className="aub-chat-bubble">
-                      Welcome to AUB. Select a category on the right to explore training content,
-                      product information, and resources.
-                    </div>
-                    <span className="aub-chat-meta">just now</span>
-                  </div>
-                </div>
-                <form
-                  className="aub-chat-input-row"
-                  onSubmit={(e) => {
-                    e.preventDefault()
-                  }}
-                >
-                  <input
-                    className="aub-chat-input"
-                    placeholder="Type a message (demo only)..."
-                  />
-                  <button type="submit" className="aub-chat-send">
-                    Send
-                  </button>
-                </form>
-              </div>
-
               <div className="aub-category-panel">
                 <h2 className="aub-category-title">Knowledge Categories</h2>
                 <p className="aub-category-subtitle">
