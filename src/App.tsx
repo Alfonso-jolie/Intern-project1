@@ -776,10 +776,6 @@ const INFOGRAPHICS: Record<string, InfographicItem[]> = {
       url: 'https://notebooklm.google.com/notebook/aaa2fa1d-3075-435d-ad5a-4d49fd9f9b6b?artifactId=2b984008-9ab9-4526-acba-9dc4a8c8e130',
     },
     {
-      title: 'Superhero Themed Loan Checklist',
-      url: 'https://notebooklm.google.com/notebook/aaa2fa1d-3075-435d-ad5a-4d49fd9f9b6b?artifactId=1ec04fed-1bf9-4667-9445-d6a939be7cfd',
-    },
-    {
       title: 'Auto Loan Approval Guide',
       url: 'https://notebooklm.google.com/notebook/aaa2fa1d-3075-435d-ad5a-4d49fd9f9b6b?artifactId=228fe7d4-1b79-42f2-9f7d-4403a945bfb4',
     },
