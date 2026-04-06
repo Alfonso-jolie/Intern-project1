@@ -8,67 +8,54 @@ const RESOURCES = [
   {
     label: 'Tellering, Cash Handling & Currency Knowledge',
     url: 'https://notebooklm.google.com/notebook/4f99c986-6a77-4a3c-87b7-828e057d11cd/preview',
-    icon: '💼',
   },
   {
     label: 'AUB Products and Services',
     url: 'https://notebooklm.google.com/notebook/aaa2fa1d-3075-435d-ad5a-4d49fd9f9b6b/preview',
-    icon: '🏦',
   },
   {
     label: 'Fees, Charges & Computation',
     url: 'https://notebooklm.google.com/notebook/feb58c73-882b-46a6-9c23-61885c93a013/preview',
-    icon: '💰',
   },
   {
     label: 'Sales, Service & Branch Roles',
     url: 'https://notebooklm.google.com/notebook/5f9f0aec-3f28-49c1-b5e1-2d109faa451e/preview',
-    icon: '👥',
   },
   {
     label: 'HR, Workplace Policies & Systems',
     url: 'https://notebooklm.google.com/notebook/00caec8e-9337-402b-9f28-c63cbbe83fc4/preview',
-    icon: '👔',
   },
   {
     label: 'Cards and Payment Solutions',
     url: 'https://notebooklm.google.com/notebook/d5ba644a-995b-4d12-822e-db0f9008a9a2/preview',
-    icon: '💳',
   },
   {
     label: 'All Documents',
     url: 'https://notebooklm.google.com/notebook/afe539aa-c413-486d-96be-5096c3a4e8ba/preview',
-    icon: '📄',
   },
   {
     label: 'Account, Loans, and Credit Products',
     url: 'https://notebooklm.google.com/notebook/6f4894f1-961d-4e2e-a9c1-d148fe8b59b4/preview',
-    icon: '📋',
   },
   {
     label: 'Cash Management & Business Services',
     url: 'https://notebooklm.google.com/notebook/0dfbd9f8-5706-425e-b6a0-d76bc39703b9/preview',
-    icon: '💳',
   },
   {
     label: 'Branches Operation',
     url: 'https://notebooklm.google.com/notebook/d060e698-51f2-4b18-af5c-5f19530ec824/preview',
-    icon: '🏢',
   },
   {
     label: 'Corporate Information & Product Overview',
     url: 'https://notebooklm.google.com/notebook/8b058e63-b24e-4a1b-9ad8-6750f46cf382/preview',
-    icon: '📊',
   },
   {
     label: 'Business Product',
     url: 'https://notebooklm.google.com/notebook/2193fe57-88f7-4095-92a0-f1af27a81932/preview',
-    icon: '🎯',
   },
   {
     label: 'Leadership, Productivity & Professional Skills',
     url: 'https://notebooklm.google.com/notebook/75f3f6b2-3b0d-45f9-86ac-b4d58240155a/preview',
-    icon: '⭐',
   },
 ]
 
