@@ -783,6 +783,36 @@ const INFOGRAPHICS: Record<string, InfographicItem[]> = {
       url: 'https://notebooklm.google.com/notebook/00caec8e-9337-402b-9f28-c63cbbe83fc4?artifactId=b94ed4cc-15d0-42d1-a79b-fc3978c0a05d',
     },
   ],
+    'AUB Products and Services': [
+    {
+      title: 'Guide to Modern Banking Solutions',
+      url: 'https://notebooklm.google.com/notebook/aaa2fa1d-3075-435d-ad5a-4d49fd9f9b6b?artifactId=2b984008-9ab9-4526-acba-9dc4a8c8e130',
+    },
+    {
+      title: 'Superhero Themed Loan Checklist',
+      url: 'https://notebooklm.google.com/notebook/aaa2fa1d-3075-435d-ad5a-4d49fd9f9b6b?artifactId=1ec04fed-1bf9-4667-9445-d6a939be7cfd',
+    },
+    {
+      title: 'Auto Loan Approval Guide',
+      url: 'https://notebooklm.google.com/notebook/aaa2fa1d-3075-435d-ad5a-4d49fd9f9b6b?artifactId=228fe7d4-1b79-42f2-9f7d-4403a945bfb4',
+    },
+    {
+      title: 'Guide to Seamless Loan Applications',
+      url: 'https://notebooklm.google.com/notebook/aaa2fa1d-3075-435d-ad5a-4d49fd9f9b6b?artifactId=bd9acc89-ece7-4892-ab8e-59bb2e9be15d',
+    },
+        {
+      title: 'Digital Banking and Payment Solutions',
+      url: 'https://notebooklm.google.com/notebook/aaa2fa1d-3075-435d-ad5a-4d49fd9f9b6b?artifactId=1b19a082-e6cd-46cf-91c5-c798b9e7f52f',
+    },
+    {
+      title: 'Beginner/s Guide to UITF Investments',
+      url: 'https://notebooklm.google.com/notebook/aaa2fa1d-3075-435d-ad5a-4d49fd9f9b6b?artifactId=ab654610-c28e-4b36-bed6-0fa1f1644fc8',
+    },
+    {
+      title: 'Investing Made Simple: UITF Guide',
+      url: 'https://notebooklm.google.com/notebook/aaa2fa1d-3075-435d-ad5a-4d49fd9f9b6b?artifactId=d23df719-730f-4990-bd3e-38eeb4a16b21',
+    },
+  ],
   'Tellering, Cash Handling & Currency Knowledge': [
     {
       title: 'Essential Teller Currency Fraud Guide',
